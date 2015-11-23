@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="425" id="KGk-i7-Jjw" customClass="FeedTableViewCell" customModule="OurInstagram" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="589"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kTx-Tw-N4f">
+                        <rect key="frame" x="-4" y="54" width="328" height="224"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TB2-mg-G1i">
+                        <rect key="frame" x="9" y="280" width="61" height="34"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <state key="normal" title="Like">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="like:" destination="KGk-i7-Jjw" eventType="touchDown" id="Fd6-2r-jea"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfQ-QH-egJ">
+                        <rect key="frame" x="78" y="286" width="235" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M75-UT-Shr">
+                        <rect key="frame" x="8" y="304" width="304" height="60"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Likes">
+                                <attributes>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f8i-JZ-MQL">
+                        <rect key="frame" x="8" y="4" width="42" height="42"/>
+                    </imageView>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R7z-hZ-rqm">
+                        <rect key="frame" x="9" y="372" width="247" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comments" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pa-im-hRW">
+                        <rect key="frame" x="10" y="410" width="305" height="171"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxC-Iy-WbK">
+                        <rect key="frame" x="68" y="27" width="144" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfK-jt-RvB">
+                        <rect key="frame" x="68" y="4" width="247" height="28"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <color key="textColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuD-f9-5Yp">
+                        <rect key="frame" x="264" y="372" width="48" height="30"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <state key="normal" title="Send">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="send:" destination="KGk-i7-Jjw" eventType="touchDown" id="6Cs-Ae-ix4"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="Name" destination="EfK-jt-RvB" id="ZMh-PG-xG3"/>
+                <outlet property="comment" destination="R7z-hZ-rqm" id="Iz7-Jp-UwQ"/>
+                <outlet property="commentsDisplay" destination="3Pa-im-hRW" id="D4q-tk-E6x"/>
+                <outlet property="likeOutlet" destination="TB2-mg-G1i" id="Bnk-yV-G1V"/>
+                <outlet property="likes" destination="M75-UT-Shr" id="Wzb-QO-T55"/>
+                <outlet property="location" destination="JfQ-QH-egJ" id="4da-OT-jbF"/>
+                <outlet property="name" destination="EfK-jt-RvB" id="vJ7-cS-UUZ"/>
+                <outlet property="picture" destination="kTx-Tw-N4f" id="9uH-0n-X43"/>
+                <outlet property="portrait" destination="f8i-JZ-MQL" id="UdZ-hA-Oss"/>
+                <outlet property="time" destination="oxC-Iy-WbK" id="FjQ-YZ-Ny2"/>
+            </connections>
+            <point key="canvasLocation" x="249.5" y="336.5"/>
+        </tableViewCell>
+    </objects>
+</document>
